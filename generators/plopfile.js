@@ -14,6 +14,11 @@ module.exports = function (plop) {
         path: '../components/{{pascalCase name}}/{{pascalCase name}}.vue',
         templateFile: 'templates/component.hbs',
       },
+      {
+        type: 'add',
+        path: '../components/{{pascalCase name}}/{{pascalCase name}}.stories.ts',
+        templateFile: 'templates/stories.ts.hbs',
+      },
     ],
   });
 };
