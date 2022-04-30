@@ -1,42 +1,72 @@
-# Nuxt 3 Minimal Starter
+# Tradly
+### Onboarding
+- When the user access the first time, should see the onboarding carousel
+- The second time that user access to the page, then redirect to home page
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+### Login
+- User should login with email and password
+- User should verify with mobile number
+- User can recover his password
+- User can go to register page
 
-## Setup
+### Register
+- User should register with firstname, lastname, email and password
+- User should confirm his password
+- User can go to login page
+- User must confirm his phone number
 
-Make sure to install the dependencies:
+### Verify number
+- User must type the six digit code send to his phone.
+- User can submit the code.
 
-```bash
-# yarn
-yarn install
+### Home
+- User can see popular products
+- User can see new products
+- User can see the categories
+- User can see stores to follow
 
-# npm
-npm install
+### Category
+- User can see products by category
+- User can filter by location
+- User can sort by name or price
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+### Browse product
+- User can search by name
+- User can filter by location
+- User sorts product by name and price
 
-## Development Server
+### Product detail
+- User can see the product info in a separate page
+- In this page, user can purchase the product
+- User can add products to a wishlist
 
-Start the development server on http://localhost:3000
+### Wishlist
+- User can see a list with his favorite products
+- User can click and be redirect to the product detail page
 
-```bash
-npm run dev
-```
+### Checkout
+- User can see the product purchased and the price
+- User must add address
+- If there are no address selected, user can't continue to payment
+- User can select payment method
+- User can add credit cards
+- User must confirm payment
+- User can see a tracking page for the purchased products
 
-## Production
+### Orders
+- User can see the currect status of each order sorted by date
 
-Build the application for production:
+### Profile
+- Needs to be defined these requirements
 
-```bash
-npm run build
-```
+### Store
+- User can create a single store
+- User can edit store info
+- User can add products
+- User can see the profile for store
+- User can search his own products
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+## Template steps
+- Create theme
+- Setup stylelint
+- Setup generator
