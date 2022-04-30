@@ -5,10 +5,11 @@ import SplashScreen from './SplashScreen.vue';
 
 describe('SplashScreen.vue', () => {
   test('should render', () => {
-    render(SplashScreen);
+    const { container } = render(SplashScreen);
 
     expect(
       screen.getByRole('heading', { name: 'Hello world' })
     ).toBeInTheDocument();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
