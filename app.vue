@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import Splash from '@/components/Splash/Splash.vue';
+import Splash from '@/components/SplashScreen/SplashScreen.vue';
 </script>
