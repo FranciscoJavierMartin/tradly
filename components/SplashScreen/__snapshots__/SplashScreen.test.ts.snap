@@ -1,7 +1,11 @@
 // Vitest Snapshot v1
 
 exports[`SplashScreen.vue > should render 1`] = `
-<h1>
-  Hello world
-</h1>
+<div>
+  <h1
+    class="test"
+  >
+    Hello world
+  </h1>
+</div>
 `;

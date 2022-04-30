@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ test }}</h1>
+    <h1 class="test">{{ test }}</h1>
   </div>
 </template>
 
@@ -9,5 +9,9 @@ const test = 'Hello world';
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/main.scss';
+@import '../../assets/styles/main.scss';
+
+.test {
+  color: $my-color;
+}
 </style>
