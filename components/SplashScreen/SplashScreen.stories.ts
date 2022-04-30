@@ -3,6 +3,7 @@ import SplashScreen from './SplashScreen.vue';
 export default {
   title: 'SplashScreen',
   component: SplashScreen,
+  args: {},
 };
 
 const Template = (args) => ({
