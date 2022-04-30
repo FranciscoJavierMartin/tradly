@@ -10,6 +10,8 @@ const test = 'Hello world';
 </script>
 
 <style lang="scss">
+@import '@/assets/styles/main.scss';
+
 .test {
   color: $my-color;
 }
