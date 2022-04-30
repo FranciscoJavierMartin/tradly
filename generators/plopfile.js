@@ -19,6 +19,11 @@ module.exports = function (plop) {
         path: '../components/{{pascalCase name}}/{{pascalCase name}}.stories.ts',
         templateFile: 'templates/stories.ts.hbs',
       },
+      {
+        type: 'add',
+        path: '../components/{{pascalCase name}}/{{pascalCase name}}.test.ts',
+        templateFile: 'templates/test.ts.hbs',
+      },
     ],
   });
 };
