@@ -2,7 +2,7 @@ import { defineConfig } from 'vitest/config';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [process.env.NODE_ENV === 'test' ? vue() : undefined],
   test: {
     globals: true,
     environment: 'jsdom',
