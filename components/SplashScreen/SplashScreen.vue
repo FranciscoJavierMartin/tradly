@@ -8,3 +8,9 @@
 <script setup lang="ts">
 const test = 'Hello world';
 </script>
+
+<style lang="scss">
+.test {
+  color: $my-color;
+}
+</style>
