@@ -9,7 +9,7 @@
     "storybook": "start-storybook -p 6006",
     "test": "vitest run --coverage",
     "test:watch": "vitest watch --coverage",
-    "prepare": "husky install"
+    "component": "yarn plop  --plopfile ./generators/plopfile.js"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^6.4.22",
@@ -26,13 +26,14 @@
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.7.1",
+    "husky": "^7.0.0",
     "jsdom": "^19.0.0",
     "nuxt": "3.0.0-rc.1",
+    "plop": "^3.1.0",
     "prettier": "^2.6.2",
     "sass": "^1.51.0",
     "storybook-builder-vite": "^0.1.23",
     "typescript": "^4.6.4",
-    "vitest": "^0.10.0",
-    "husky": "^7.0.0"
+    "vitest": "^0.10.0"
   }
 }
