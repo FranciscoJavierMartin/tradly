@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>{{ test }}</h1>
-    <span class="test"> Test </span>
   </div>
 </template>
 
@@ -11,8 +10,4 @@ const test = 'Hello world';
 
 <style lang="scss">
 @import '@/assets/styles/main.scss';
-
-.test {
-  color: $my-color;
-}
 </style>

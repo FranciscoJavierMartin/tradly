@@ -10,6 +10,6 @@ describe('SplashScreen.vue', () => {
     expect(
       screen.getByRole('heading', { name: 'Hello world' })
     ).toBeInTheDocument();
-    // expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
