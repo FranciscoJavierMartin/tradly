@@ -1,7 +1,6 @@
-import { render, screen } from '@testing-library/vue';
 import '@testing-library/jest-dom';
-// import {mount} from '@vue/test-utils';
 import { describe, expect, test } from 'vitest';
+import { render, screen } from '@testing-library/vue';
 import SplashScreen from './SplashScreen.vue';
 
 describe('SplashScreen.vue', () => {
