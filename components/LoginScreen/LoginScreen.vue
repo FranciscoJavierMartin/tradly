@@ -28,6 +28,7 @@ const props = defineProps({});
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: $white;
 
@@ -49,6 +50,7 @@ const props = defineProps({});
     padding: 20px;
 
     input {
+      margin-bottom: 16px;
       color: $white;
       background-color: $dark-green;
       border: 1px solid $white;
@@ -63,15 +65,21 @@ const props = defineProps({});
         background-color: $dark-green;
       }
     }
+
+    button {
+      margin-top: 38px;
+    }
   }
 
   &__forgot-password {
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
   }
 
   &__sign-up {
+    margin-top: 30px;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
