@@ -1,0 +1,43 @@
+<template>
+  <div class="c-on-boarding">
+    <div>
+      <img src="../../assets/imgs/on-boarding-step-1.svg" />
+      <h3>Empowering Artisans, Farmers & Micro Business</h3>
+    </div>
+    <div class="steps">
+      <div class="active"></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- <button>Next</button> -->
+  </div>
+</template>
+
+<script setup lang="ts">
+// const props = defineProps({});
+</script>
+
+<style lang="scss">
+@import '../../assets/styles/main.scss';
+
+.c-on-boarding {
+  .steps {
+    display: flex;
+
+    div {
+      margin: 5px;
+      width: 12px;
+      height: 12px;
+      background: $light-green;
+      border-radius: 50%;
+      opacity: 0.6;
+      mix-blend-mode: normal;
+
+      &.active {
+        background-color: $dark-green;
+        opacity: 1;
+      }
+    }
+  }
+}
+</style>

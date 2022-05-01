@@ -1,9 +1,9 @@
 <template>
   <div>
-    <SplashScreen />
+    <OnBoarding />
   </div>
 </template>
 
 <script setup lang="ts">
-import SplashScreen from '@/components/SplashScreen/SplashScreen.vue';
+import OnBoarding from '@/components/OnBoarding/OnBoarding.vue';
 </script>
