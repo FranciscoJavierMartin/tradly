@@ -24,6 +24,14 @@
   display: flex;
   flex-direction: column;
   padding: 15px;
+  background-color: $dark-green;
+
+  img {
+    background-color: $white;
+    padding: 5px;
+    padding-top: 40px;
+    border-radius: 8px;
+  }
 
   h3 {
     font-weight: 500;
