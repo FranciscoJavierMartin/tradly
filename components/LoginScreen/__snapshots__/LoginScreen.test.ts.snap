@@ -7,9 +7,9 @@ exports[`LoginScreen.vue > should render 1`] = `
   <h1>
     Welcome to tradly
   </h1>
-  <span>
+  <h6>
     Login to your account
-  </span>
+  </h6>
   <form>
     <input
       placeholder="Email"

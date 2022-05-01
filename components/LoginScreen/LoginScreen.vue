@@ -1,7 +1,7 @@
 <template>
   <div class="c-login-screen">
     <h1>Welcome to tradly</h1>
-    <span>Login to your account</span>
+    <h6>Login to your account</h6>
     <form>
       <input type="email" placeholder="Email" />
       <input type="password" placeholder="Password" />
@@ -28,6 +28,18 @@ const props = defineProps({});
   flex-direction: column;
   text-align: center;
   color: $white;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+  h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
 
   form {
     display: flex;
