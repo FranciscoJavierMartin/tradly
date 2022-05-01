@@ -1,2 +1,7 @@
+@import '_variables.scss';
 
-$my-color: blue;
+body {
+  font-family: $monserrat-font;
+  margin: 0;
+  padding: 0;
+}

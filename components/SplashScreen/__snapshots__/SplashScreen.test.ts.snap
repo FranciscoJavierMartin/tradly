@@ -1,11 +1,14 @@
 // Vitest Snapshot v1
 
 exports[`SplashScreen.vue > should render 1`] = `
-<div>
-  <h1
-    class="test"
-  >
-    Hello world
-  </h1>
+<div
+  class="c-splash-screen"
+>
+  <img
+    src="/assets/imgs/logo.svg"
+  />
+  <h2>
+    Tradly
+  </h2>
 </div>
 `;

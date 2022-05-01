@@ -4,6 +4,9 @@ export default {
   title: 'SplashScreen',
   component: SplashScreen,
   args: {},
+  parameters: {
+    layout: 'fullscreen',
+  },
 };
 
 const Template = (args) => ({

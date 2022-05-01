@@ -7,9 +7,8 @@ describe('SplashScreen.vue', () => {
   test('should render', () => {
     const { container } = render(SplashScreen);
 
-    expect(
-      screen.getByRole('heading', { name: 'Hello world' })
-    ).toBeInTheDocument();
+    const heading = screen.getByRole('heading', { name: 'Tradly' });
+    expect(heading).toBeInTheDocument();
     expect(container.firstChild).toMatchSnapshot();
   });
 });
