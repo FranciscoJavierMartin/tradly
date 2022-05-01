@@ -1,10 +1,10 @@
 <template>
   <div class="c-on-boarding">
-    <div class="c-on-boarding__item">
+    <div class="c-on-boarding__slide">
       <img src="../../assets/imgs/on-boarding-step-1.svg" />
       <h3>Empowering Artisans, Farmers & Micro Business</h3>
-      <div class="c-on-boarding__item__steps">
-        <div class="c-on-boarding__item__steps--active"></div>
+      <div class="c-on-boarding__slide__steps">
+        <div class="c-on-boarding__slide__steps--active"></div>
         <div></div>
         <div></div>
       </div>
@@ -14,7 +14,21 @@
 </template>
 
 <script setup lang="ts">
-// const props = defineProps({});
+// import { PropType } from 'vue';
+
+// interface Slide {
+//   text: string;
+//   img: string;
+// }
+
+// const props = defineProps({
+//   slides: {
+//     type: Array as PropType<Slide[]>,
+//     default: () => [],
+//   },
+// });
+
+// // const activeSlide = props.slides[0];
 </script>
 
 <style lang="scss">
@@ -28,7 +42,7 @@
   justify-content: flex-end;
   width: 100vw;
 
-  &__item {
+  &__slide {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -64,7 +78,7 @@
         opacity: 0.6;
         width: 12px;
 
-        &.c-on-boarding__item__steps--active {
+        &.c-on-boarding__slide__steps--active {
           background-color: $dark-green;
           opacity: 1;
         }
