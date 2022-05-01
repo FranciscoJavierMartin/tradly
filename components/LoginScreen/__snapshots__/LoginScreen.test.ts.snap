@@ -1,0 +1,39 @@
+// Vitest Snapshot v1
+
+exports[`LoginScreen.vue > should render 1`] = `
+<div
+  class="c-login-screen"
+>
+  <h1>
+    Welcome to tradly
+  </h1>
+  <span>
+    Login to your account
+  </span>
+  <form>
+    <input
+      placeholder="Email"
+      type="email"
+    />
+    <input
+      placeholder="Password"
+      type="password"
+    />
+    <button
+      class="c-custom-button c-custom-button--inverted"
+    >
+      Login
+    </button>
+  </form>
+  <a>
+    Forgot you password?
+  </a>
+  <span>
+    Don't have an account?
+  </span>
+   
+  <a>
+    Sign up
+  </a>
+</div>
+`;

@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <OnBoarding />
-  </div>
+  <LoginScreen />
 </template>
 
 <script setup lang="ts">
-import OnBoarding from '@/components/OnBoarding/OnBoarding.vue';
+import LoginScreen from './components/LoginScreen/LoginScreen.vue';
 </script>
