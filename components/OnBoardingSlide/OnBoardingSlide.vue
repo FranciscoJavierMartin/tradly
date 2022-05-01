@@ -11,14 +11,16 @@
         }"
       />
     </div>
-    <button @click="onClick">
-      {{ currentIndex === amountOfSlides ? 'Finish' : 'Next' }}
-    </button>
+    <CustomButton
+      :text="currentIndex === amountOfSlides ? 'Finish' : 'Next'"
+      :on-click="onClick"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 import { PropType } from 'vue';
+import CustomButton from '../CustomButton/CustomButton.vue';
 import { Slide } from './types';
 
 const props = defineProps({
@@ -87,21 +89,6 @@ function onClick(): void {
         opacity: 1;
       }
     }
-  }
-
-  button {
-    background-color: $dark-green;
-    border-radius: 24px;
-    border: none;
-    color: $white;
-    font-family: $monserrat-font;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 18px;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
   }
 }
 </style>

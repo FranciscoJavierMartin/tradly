@@ -28,7 +28,7 @@ const currentSlide = computed<Slide>(
 );
 
 function nextSlide(): void {
-  currentIndex.value = (currentIndex.value + 1) % 3;
+  currentIndex.value = (currentIndex.value % 3) + 1;
 }
 </script>
 

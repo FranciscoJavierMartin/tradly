@@ -29,7 +29,9 @@ exports[`OnBoarding.vue > should render 1`] = `
       />
       
     </div>
-    <button>
+    <button
+      class="c-custom-button"
+    >
       Next
     </button>
   </div>

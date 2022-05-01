@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`CustomButton.vue > should render 1`] = `
+<button
+  class="c-custom-button"
+>
+  Lorem ipsum
+</button>
+`;
