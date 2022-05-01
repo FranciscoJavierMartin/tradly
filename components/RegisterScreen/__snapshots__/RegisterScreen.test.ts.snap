@@ -1,0 +1,56 @@
+// Vitest Snapshot v1
+
+exports[`RegisterScreen.vue > should render 1`] = `
+<div
+  class="c-register-screen"
+>
+  <h1>
+    Welcome to tradly
+  </h1>
+  <h6>
+    Signup to your account
+  </h6>
+  <form>
+    <input
+      class="c-custom-input"
+      placeholder="First Name"
+      type="text"
+    />
+    <input
+      class="c-custom-input"
+      placeholder="Last Name"
+      type="text"
+    />
+    <input
+      class="c-custom-input"
+      placeholder="Email"
+      type="email"
+    />
+    <input
+      class="c-custom-input"
+      placeholder="Password"
+      type="password"
+    />
+    <input
+      class="c-custom-input"
+      placeholder="Confirm Password"
+      type="password"
+    />
+    <button
+      class="c-custom-button c-custom-button--inverted"
+    >
+      Create
+    </button>
+  </form>
+  <span
+    class="c-register-screen__sign-in"
+  >
+     Have an account? 
+    <a
+      href="#"
+    >
+      Sign in
+    </a>
+  </span>
+</div>
+`;

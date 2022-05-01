@@ -1,17 +1,17 @@
 <template>
-  <div class="c-login-screen">
+  <div class="c-register-screen">
     <h1>Welcome to tradly</h1>
-    <h6>Login to your account</h6>
+    <h6>Signup to your account</h6>
     <form>
+      <CustomInput type="text" placeholder="First Name" />
+      <CustomInput type="text" placeholder="Last Name" />
       <CustomInput type="email" placeholder="Email" />
       <CustomInput type="password" placeholder="Password" />
-      <CustomButton text="Login" inverted />
+      <CustomInput type="password" placeholder="Confirm Password" />
+      <CustomButton text="Create" inverted />
     </form>
-    <a href="#" class="c-login-screen__forgot-password">
-      Forgot your password?
-    </a>
-    <span class="c-login-screen__sign-up">
-      Don't have an account? <a href="#">Sign up</a>
+    <span class="c-register-screen__sign-in">
+      Have an account? <a href="#">Sign in</a>
     </span>
   </div>
 </template>
@@ -25,9 +25,8 @@ const props = defineProps({});
 <style lang="scss">
 @import '../../assets/styles/main.scss';
 
-.c-login-screen {
+.c-register-screen {
   background-color: $dark-green;
-  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -36,6 +35,7 @@ const props = defineProps({});
   color: $white;
 
   h1 {
+    padding-top: 40px;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 29px;
@@ -50,31 +50,23 @@ const props = defineProps({});
   form {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0px 20px;
 
     input {
       margin-bottom: 16px;
     }
 
     button {
-      margin-top: 38px;
+      margin-top: 25px;
     }
   }
 
-  &__forgot-password {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    text-decoration: none;
-    color: $white;
-  }
-
-  &__sign-up {
+  &__sign-in {
     margin-top: 30px;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    padding-bottom: 30px;
 
     a {
       font-weight: 600;
