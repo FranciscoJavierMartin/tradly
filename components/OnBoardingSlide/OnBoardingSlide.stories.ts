@@ -6,7 +6,7 @@ export default {
   component: OnBoardingSlide,
   args: {
     slide: slideMocks[1],
-    index: 0,
+    currentIndex: 1,
     amountOfSlides: 3,
   },
 };

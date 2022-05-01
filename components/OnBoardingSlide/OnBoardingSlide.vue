@@ -1,6 +1,6 @@
 <template>
   <div class="c-on-boarding-slide">
-    <img :src="slide.img" />
+    <img :src="slide.img" :alt="slide.text" />
     <h3>{{ slide.text }}</h3>
     <div class="c-on-boarding-slide__steps">
       <div
@@ -11,7 +11,9 @@
         }"
       />
     </div>
-    <button>Next</button>
+    <button @click="onClick">
+      {{ currentIndex === amountOfSlides ? 'Finish' : 'Next' }}
+    </button>
   </div>
 </template>
 
@@ -33,6 +35,12 @@ const props = defineProps({
     required: true,
   },
 });
+
+const emit = defineEmits(['next']);
+
+function onClick(): void {
+  emit('next');
+}
 </script>
 
 <style lang="scss">
