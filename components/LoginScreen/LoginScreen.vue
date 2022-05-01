@@ -8,7 +8,9 @@
       <CustomButton text="Login" inverted />
     </form>
     <a class="c-login-screen__forgot-password">Forgot you password?</a>
-    <span>Don't have an account?</span> <a>Sign up</a>
+    <span class="c-login-screen__sign-up"
+      >Don't have an account? <a>Sign up</a></span
+    >
   </div>
 </template>
 
@@ -67,6 +69,16 @@ const props = defineProps({});
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
+  }
+
+  &__sign-up {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    a {
+      font-weight: 600;
+    }
   }
 }
 </style>

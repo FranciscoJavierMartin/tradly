@@ -30,12 +30,13 @@ exports[`LoginScreen.vue > should render 1`] = `
   >
     Forgot you password?
   </a>
-  <span>
-    Don't have an account?
+  <span
+    class="c-login-screen__sign-up"
+  >
+    Don't have an account? 
+    <a>
+      Sign up
+    </a>
   </span>
-   
-  <a>
-    Sign up
-  </a>
 </div>
 `;
