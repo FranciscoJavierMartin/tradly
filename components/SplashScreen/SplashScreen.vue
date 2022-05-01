@@ -1,7 +1,7 @@
 <template>
   <div class="c-splash-screen">
-    <div class="c-animation-container">
-      <img src="../../assets/imgs/logo.svg" />
+    <div class="c-splash-screen__animation-container">
+      <img src="../../assets/imgs/logo.svg" alt="Tradly logo" />
       <h2>Tradly</h2>
     </div>
   </div>
@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
 
-  .c-animation-container {
+  &__animation-container {
     display: flex;
     flex-direction: column;
     animation: increase-size 2s ease infinite;
