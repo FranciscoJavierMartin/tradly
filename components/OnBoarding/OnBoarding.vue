@@ -1,9 +1,7 @@
 <template>
   <div class="c-on-boarding">
-    <div>
-      <img src="../../assets/imgs/on-boarding-step-1.svg" />
-      <h3>Empowering Artisans, Farmers & Micro Business</h3>
-    </div>
+    <img src="../../assets/imgs/on-boarding-step-1.svg" />
+    <h3>Empowering Artisans, Farmers & Micro Business</h3>
     <div class="steps">
       <div class="active"></div>
       <div></div>
@@ -23,14 +21,17 @@
 .c-on-boarding {
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  background-color: $dark-green;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient($dark-green 50%, $white 50%);
+  justify-content: flex-end;
+  align-items: center;
 
   img {
     background-color: $white;
-    padding: 5px;
-    padding-top: 40px;
+    padding: 40px 5px 5px;
     border-radius: 8px;
+    width: 70%;
   }
 
   h3 {

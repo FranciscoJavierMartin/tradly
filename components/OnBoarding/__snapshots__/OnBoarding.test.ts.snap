@@ -4,14 +4,12 @@ exports[`OnBoarding.vue > should render 1`] = `
 <div
   class="c-on-boarding"
 >
-  <div>
-    <img
-      src="/assets/imgs/on-boarding-step-1.svg"
-    />
-    <h3>
-      Empowering Artisans, Farmers & Micro Business
-    </h3>
-  </div>
+  <img
+    src="/assets/imgs/on-boarding-step-1.svg"
+  />
+  <h3>
+    Empowering Artisans, Farmers & Micro Business
+  </h3>
   <div
     class="steps"
   >
