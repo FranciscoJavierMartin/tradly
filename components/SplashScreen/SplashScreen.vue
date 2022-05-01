@@ -1,7 +1,9 @@
 <template>
   <div class="c-splash-screen">
-    <img src="../../assets/imgs/logo.svg" />
-    <h2>Tradly</h2>
+    <div class="c-animation-container">
+      <img src="../../assets/imgs/logo.svg" />
+      <h2>Tradly</h2>
+    </div>
   </div>
 </template>
 
@@ -15,14 +17,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 
-  h2 {
-    color: $white;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
+  .c-animation-container {
+    display: flex;
+    flex-direction: column;
+    animation: increase-size 2s ease infinite;
+
+    @keyframes increase-size {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    h2 {
+      color: $white;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
   }
 }
 </style>

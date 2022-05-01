@@ -4,11 +4,15 @@ exports[`SplashScreen.vue > should render 1`] = `
 <div
   class="c-splash-screen"
 >
-  <img
-    src="/assets/imgs/logo.svg"
-  />
-  <h2>
-    Tradly
-  </h2>
+  <div
+    class="c-animation-container"
+  >
+    <img
+      src="/assets/imgs/logo.svg"
+    />
+    <h2>
+      Tradly
+    </h2>
+  </div>
 </div>
 `;
