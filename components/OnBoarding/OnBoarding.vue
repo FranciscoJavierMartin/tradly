@@ -25,6 +25,15 @@
   flex-direction: column;
   padding: 15px;
 
+  h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.482353px;
+    color: $dark-green;
+  }
+
   .steps {
     display: flex;
 
