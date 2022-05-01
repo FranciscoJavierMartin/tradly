@@ -9,7 +9,7 @@
       <div></div>
       <div></div>
     </div>
-    <!-- <button>Next</button> -->
+    <button>Next</button>
   </div>
 </template>
 
@@ -38,6 +38,20 @@
         opacity: 1;
       }
     }
+  }
+
+  button {
+    background-color: $dark-green;
+    border-radius: 24px;
+    color: $white;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none;
+    border: none;
+    padding: 15px;
   }
 }
 </style>

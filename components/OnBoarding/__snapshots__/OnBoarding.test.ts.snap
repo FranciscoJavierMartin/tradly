@@ -21,6 +21,8 @@ exports[`OnBoarding.vue > should render 1`] = `
     <div />
     <div />
   </div>
-  <!-- &lt;button&gt;Next&lt;/button&gt; -->
+  <button>
+    Next
+  </button>
 </div>
 `;
