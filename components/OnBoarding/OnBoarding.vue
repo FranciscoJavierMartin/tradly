@@ -1,10 +1,10 @@
 <template>
   <div class="c-on-boarding">
-    <div class="item">
+    <div class="c-on-boarding__item">
       <img src="../../assets/imgs/on-boarding-step-1.svg" />
       <h3>Empowering Artisans, Farmers & Micro Business</h3>
-      <div class="steps">
-        <div class="active"></div>
+      <div class="c-on-boarding__item__steps">
+        <div class="c-on-boarding__item__steps--active"></div>
         <div></div>
         <div></div>
       </div>
@@ -28,7 +28,7 @@
   justify-content: flex-end;
   width: 100vw;
 
-  .item {
+  &__item {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -52,10 +52,10 @@
       text-align: center;
     }
 
-    .steps {
+    &__steps {
       display: flex;
 
-      div {
+      > div {
         background: $light-green;
         border-radius: 50%;
         height: 12px;
@@ -64,7 +64,7 @@
         opacity: 0.6;
         width: 12px;
 
-        &.active {
+        &.c-on-boarding__item__steps--active {
           background-color: $dark-green;
           opacity: 1;
         }
