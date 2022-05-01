@@ -3,20 +3,26 @@
     <h1>Welcome to tradly</h1>
     <h6>Login to your account</h6>
     <form>
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
+      <CustomInput type="email" placeholder="Email" />
+      <CustomInput type="password" placeholder="Password" />
       <CustomButton text="Login" inverted />
     </form>
-    <a class="c-login-screen__forgot-password">Forgot you password?</a>
-    <span class="c-login-screen__sign-up"
-      >Don't have an account? <a>Sign up</a></span
-    >
+    <a href="#" class="c-login-screen__forgot-password">
+      Forgot your password?
+    </a>
+    <span class="c-login-screen__sign-up">
+      Don't have an account? <a href="#">Sign up</a>
+    </span>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import CustomButton from '../CustomButton/CustomButton.vue';
+import CustomInput from '../CustomInput/CustomInput.vue';
 const props = defineProps({});
+
+const test = ref('');
 </script>
 
 <style lang="scss">
@@ -51,19 +57,6 @@ const props = defineProps({});
 
     input {
       margin-bottom: 16px;
-      color: $white;
-      background-color: $dark-green;
-      border: 1px solid $white;
-      border-radius: 24px;
-      font-family: $monserrat-font;
-      font-weight: normal;
-      line-height: 22px;
-      padding: 10px;
-
-      &::placeholder {
-        color: $white;
-        background-color: $dark-green;
-      }
     }
 
     button {
@@ -76,6 +69,8 @@ const props = defineProps({});
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
+    text-decoration: none;
+    color: $white;
   }
 
   &__sign-up {
@@ -86,6 +81,8 @@ const props = defineProps({});
 
     a {
       font-weight: 600;
+      text-decoration: none;
+      color: $white;
     }
   }
 }

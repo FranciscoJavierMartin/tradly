@@ -12,10 +12,12 @@ exports[`LoginScreen.vue > should render 1`] = `
   </h6>
   <form>
     <input
+      class="c-custom-input"
       placeholder="Email"
       type="email"
     />
     <input
+      class="c-custom-input"
       placeholder="Password"
       type="password"
     />
@@ -27,14 +29,17 @@ exports[`LoginScreen.vue > should render 1`] = `
   </form>
   <a
     class="c-login-screen__forgot-password"
+    href="#"
   >
-    Forgot you password?
+     Forgot your password? 
   </a>
   <span
     class="c-login-screen__sign-up"
   >
-    Don't have an account? 
-    <a>
+     Don't have an account? 
+    <a
+      href="#"
+    >
       Sign up
     </a>
   </span>
