@@ -36,6 +36,30 @@ describe('OnBoardingSlide.vue', () => {
     expect(activeElements.length).toBe(1);
   });
 
+  test('should show "Next" on the button when item is not the last', () => {
+    render(OnBoardingSlide, {
+      props: {
+        slide: slideMocks[0],
+        currentIndex: 1,
+        amountOfSlides: 3,
+      },
+    });
+
+    expect(screen.getByRole('button', { name: /Next/i })).toBeInTheDocument();
+  });
+
+  test('should show "Next" on the button when item is not the last', () => {
+    render(OnBoardingSlide, {
+      props: {
+        slide: slideMocks[0],
+        currentIndex: 3,
+        amountOfSlides: 3,
+      },
+    });
+
+    expect(screen.getByRole('button', { name: /Finish/i })).toBeInTheDocument();
+  });
+
   test('Click on the button should trigger "next" event', async () => {
     const { emitted } = render(OnBoardingSlide, {
       props: {
