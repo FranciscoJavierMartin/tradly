@@ -7,7 +7,7 @@
       <input type="password" placeholder="Password" />
       <CustomButton text="Login" inverted />
     </form>
-    <a>Forgot you password?</a>
+    <a class="c-login-screen__forgot-password">Forgot you password?</a>
     <span>Don't have an account?</span> <a>Sign up</a>
   </div>
 </template>
@@ -61,6 +61,12 @@ const props = defineProps({});
         background-color: $dark-green;
       }
     }
+  }
+
+  &__forgot-password {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
   }
 }
 </style>

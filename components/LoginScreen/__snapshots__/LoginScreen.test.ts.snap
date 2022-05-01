@@ -25,7 +25,9 @@ exports[`LoginScreen.vue > should render 1`] = `
       Login
     </button>
   </form>
-  <a>
+  <a
+    class="c-login-screen__forgot-password"
+  >
     Forgot you password?
   </a>
   <span>
