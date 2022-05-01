@@ -48,7 +48,7 @@ describe('OnBoardingSlide.vue', () => {
     expect(screen.getByRole('button', { name: /Next/i })).toBeInTheDocument();
   });
 
-  test('should show "Next" on the button when item is not the last', () => {
+  test('should show "Finish" on the button when item is the last', () => {
     render(OnBoardingSlide, {
       props: {
         slide: slideMocks[0],
@@ -70,6 +70,6 @@ describe('OnBoardingSlide.vue', () => {
     });
 
     await fireEvent.click(screen.getByText('Next'));
-    expect(emitted()).toHaveProperty('next');
+    expect(emitted()).toHaveProperty('nextSlide');
   });
 });

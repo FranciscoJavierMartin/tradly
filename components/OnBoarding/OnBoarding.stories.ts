@@ -1,11 +1,11 @@
 import OnBoarding from './OnBoarding.vue';
-import slides from './mock';
+import slidesMock from './mock';
 
 export default {
   title: 'OnBoarding',
   component: OnBoarding,
   args: {
-    slides,
+    slides: slidesMock,
   },
   parameters: {
     layout: 'fullscreen',

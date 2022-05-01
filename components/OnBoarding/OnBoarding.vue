@@ -1,20 +1,35 @@
 <template>
   <div class="c-on-boarding">
-    <OnBoardingSlide />
+    <OnBoardingSlide
+      :current-index="currentIndex"
+      :amount-of-slides="slides.length"
+      :slide="currentSlide"
+      @next-slide="nextSlide"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-// import { PropType } from 'vue';
+import { ref, computed, PropType } from 'vue';
+import { Slide } from '@/components/OnBoardingSlide/types';
+import OnBoardingSlide from '../OnBoardingSlide/OnBoardingSlide.vue';
 
-// const props = defineProps({
-//   slides: {
-//     type: Array as PropType<Slide[]>,
-//     default: () => [],
-//   },
-// });
+const props = defineProps({
+  slides: {
+    type: Array as PropType<Slide[]>,
+    default: () => [],
+  },
+});
 
-// // const activeSlide = props.slides[0];
+const currentIndex = ref<number>(1);
+
+const currentSlide = computed<Slide>(
+  () => props.slides[currentIndex.value - 1]
+);
+
+function nextSlide(): void {
+  currentIndex.value = (currentIndex.value + 1) % 3;
+}
 </script>
 
 <style lang="scss">

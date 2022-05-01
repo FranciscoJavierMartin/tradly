@@ -1,0 +1,37 @@
+// Vitest Snapshot v1
+
+exports[`OnBoarding.vue > should render 1`] = `
+<div
+  class="c-on-boarding"
+>
+  <div
+    class="c-on-boarding-slide"
+  >
+    <img
+      alt="Empowering Artisans, Farmers & Micro Business"
+      src="../../assets/imgs/on-boarding-step-1.svg"
+    />
+    <h3>
+      Empowering Artisans, Farmers & Micro Business
+    </h3>
+    <div
+      class="c-on-boarding-slide__steps"
+    >
+      
+      <div
+        class="c-on-boarding-slide__steps--active"
+      />
+      <div
+        class=""
+      />
+      <div
+        class=""
+      />
+      
+    </div>
+    <button>
+      Next
+    </button>
+  </div>
+</div>
+`;

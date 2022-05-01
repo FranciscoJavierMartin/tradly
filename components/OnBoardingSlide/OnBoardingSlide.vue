@@ -36,10 +36,10 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(['next']);
+const emit = defineEmits(['nextSlide']);
 
 function onClick(): void {
-  emit('next');
+  emit('nextSlide');
 }
 </script>
 
