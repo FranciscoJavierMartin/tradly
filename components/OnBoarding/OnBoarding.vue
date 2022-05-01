@@ -21,6 +21,10 @@
 @import '../../assets/styles/main.scss';
 
 .c-on-boarding {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
   .steps {
     display: flex;
 
@@ -41,6 +45,7 @@
   }
 
   button {
+    font-family: $monserrat-font;
     background-color: $dark-green;
     border-radius: 24px;
     color: $white;
