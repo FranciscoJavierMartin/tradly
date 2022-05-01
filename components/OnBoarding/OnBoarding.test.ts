@@ -3,7 +3,7 @@ import { describe, expect, test } from 'vitest';
 import { render, screen } from '@testing-library/vue';
 import OnBoarding from './OnBoarding.vue';
 
-describe('OnBoarding.vue', () => {
+describe.skip('OnBoarding.vue', () => {
   test('should render', () => {
     const { container } = render(OnBoarding);
 
